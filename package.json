@@ -1,0 +1,25 @@
+{
+  "name": "ng-d3tree",
+  "version": "1.0.0",
+  "description": "d3.js Reingold–Tilford Tree",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/server.js"
+  },
+  "dependencies": {
+    "q":"1.1.x",
+    "express": "~4.0.0",
+    "body-parser":"1.10.x",
+    "node-cypher":"0.1.x",
+    "request": "~2.53.0",
+    "cfenv":"1.0.x"
+  },
+  "keywords": [
+    "neo4j",
+    "d3.js",
+    "tree"
+  ],
+  "engines" : { "node" : ">=0.10.3 <0.12" },
+  "author": "Lei Xu",
+  "license": "ISC"
+}

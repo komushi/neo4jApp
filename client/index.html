@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>neo4j demo</title>
+    <link rel="stylesheet" href="custom_components/ng-d3tree/ng-d3tree.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+	<!-- <base href="/"> -->
+</head>
+
+
+<body ng-app="neo4jApp">
+
+	<div class="container">
+
+		<ol class="breadcrumb">
+		  <li><a href="#/sales">sales</a></li>
+		  <li><a href="#/tree">tree</a></li>
+		  <li><a href="#/collapse">collapse</a></li>
+		  <li><a href="#/force">force</a></li>
+		</ol>
+
+
+		<ng-view></ng-view>
+
+	</div>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/d3/d3.min.js"></script>
+	<script src="custom_components/ng-d3tree/ng-d3tree.js"></script>
+	
+
+	<script src="js/app.js"></script>
+	<script src="js/services/d3JSONServices.js"></script>
+	<script src="js/controllers/treeController.js"></script>
+	<script src="js/controllers/forceController.js"></script>
+	<script src="js/controllers/salesController.js"></script>
+	<script src="js/directives/linearChart.js"></script>
+	
+	
+</body>
+</html>
