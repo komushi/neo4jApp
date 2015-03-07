@@ -1,15 +1,57 @@
+var forEachElement = function(obj, iterator, context) {
+  var key, length;
+  if (obj) {
+
+      for (key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          iterator.call(context, obj[key], key, obj);
+        }
+      }
+    
+  }
+  return obj;
+};
+
 var idIndex = function(nodes,id) {
+  console.log(nodes);
   for (var i=0;i<nodes.length;i++) {
     if (nodes[i].id == id) return i;}
   return null;
-}
+};
+
+
+var getNode = function(node) 
+{
+  var conditions = [];
+
+  forEachElement(node.properties, 
+      function(value, key) {
+        this.push(',"' + key + '":' + '"' + value + '"');
+      }, 
+      conditions);
+
+  var text = '{"id":"' + node.id + '","label":"' + node.labels[0] + '"';
+
+  conditions.forEach(function(entry) {
+      text = text.concat(entry);
+  });
+
+  text += '}';
+
+  // console.log(text);  
+  return JSON.parse(text);
+};
+
 
 exports.getD3GraphJSON = function (graphJSON) {
   var nodes=[], links=[];
   graphJSON.results[0].data.forEach(function (row) {
      row.graph.nodes.forEach(function (n) {
-       if (idIndex(nodes,n.id) == null)
-         nodes.push({id:n.id,label:n.labels[0],name:n.properties.code});
+       if (idIndex(nodes,n.id) == null) 
+       {
+          nodes.push(getNode(n));
+       }
+         
      });
      links = links.concat( row.graph.relationships.map(function(r) {
        return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type};
@@ -46,7 +88,10 @@ var getFlatNestedJSON = function (graphJSON) {
        if (idIndex(nodes,n.id) == null){
 
           var sourceNodeId = getSourceNodeId(n.id, row.graph.relationships);
-          nodes.push({id:n.id,label:n.labels[0],name:n.properties.code, parentId:sourceNodeId});
+          n.properties.parentId = sourceNodeId;
+          nodes.push(getNode(n));
+
+          // nodes.push({id:n.id,label:n.labels[0],name:n.properties.code, parentId:sourceNodeId});
        }
      });
 

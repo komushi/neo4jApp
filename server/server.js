@@ -34,17 +34,195 @@ app.use('/', routes);
 /**************************/
 
 /********/
-    // var query = ""
-    // var startNode = "StartNode";
-    // var endNode = "EndNode";
-    // var anyNode = "";
-    // var multiRel = "rel";
-    // var rel = "";
-    // var nodeLabel = "Operation";
-    // var relationshipType = "POST_OPR";
-    // var nodeProperties = {"code": "0021", "level": 2};
 
-  
+
+
+var graph =
+          {
+            "nodes": [
+              {
+                "id": "2",
+                "labels": ["123"],
+                "properties": {
+                  "species": "Timelord",
+                  "acs": "dsada"
+                }
+              },
+              {
+                "id": "19",
+                "labels": ["123"],
+                "properties": {
+                  "character": "Susan Foreman",
+                  "a111cs": "dsadasda"
+                }
+              },
+              {
+                "id": "5",
+                "labels": ["123"],
+                "properties": {
+                  "planet": "Gallifrey"
+                }
+              }
+            ]
+          };
+
+var idIndex = function(nodes,id) {
+  for (var i=0;i<nodes.length;i++) {
+    if (nodes[i].id == id) return i;}
+  return null;
+};
+
+var forEachElement = function(obj, iterator, context) {
+  var key, length;
+  if (obj) {
+
+      for (key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          iterator.call(context, obj[key], key, obj);
+        }
+      }
+    
+  }
+  return obj;
+};
+
+
+
+
+
+
+  var nodes=[];
+
+    graph.nodes.forEach(function (n) {
+        if (idIndex(nodes,n.id) == null)
+        {
+
+
+            var conditions = [];
+
+            forEachElement(n.properties, 
+                function(value, key) {
+                  this.push(',"' + key + '":' + '"' + value + '"');
+                }, 
+                conditions);
+
+            var text = '{"id":"' + n.id + '","label":"' + n.labels[0] + '"';
+
+            conditions.forEach(function(entry) {
+                text = text.concat(entry);
+            });
+
+            text += '}';
+
+            // console.log(text);  
+            var json = JSON.parse(text);
+
+            nodes.push(json);
+
+            // nodes.push({id:n.id,label:n.labels[0],name:n.properties.code});
+        }
+    });
+
+
+console.log(JSON.stringify(nodes));
+
+
+//   var query = ""
+//   var startNode = "StartNode";
+//   var startNodeWithB;
+//   var firstNode = "FirstNode";
+//   var firstNodeWithB;
+//   var endNode = "EndNode";
+//   var endNodeWithB;
+//   var anyNode = "";
+//   var multiRel = "";
+//   var rel = "";
+//     var nodeLabel = "";
+//     // var relationshipType = "POST_OPR";
+//     var relationshipTypes = [{"type":"POST_OPR"},{"type":"PRE_OPR"}];
+//     var nodeProperties = {"code": "0021", "level": 2};
+
+
+//   if (nodeLabel) 
+//   {
+//     startNodeWithB = "(".concat(startNode,":",nodeLabel,")");
+//     firstNodeWithB = "(".concat(firstNode,":",nodeLabel,")");
+//     endNodeWithB = "(".concat(endNode,":",nodeLabel,")");
+//     anyNode = "(".concat(":",nodeLabel,")");
+//   }
+//   else
+//   {
+//     startNodeWithB = "(".concat(startNode,")");
+//     firstNodeWithB = "(".concat(firstNode,")");
+//     endNodeWithB = "(".concat(endNode,")");
+//     anyNode = "()";
+//   }
+
+//   var tmprel = "";
+//   relationshipTypes.forEach(function(relationshipType, index){
+//     if (index == 0)
+//     {
+//       tmprel = tmprel.concat(":",relationshipType.type);
+//     }
+//     else
+//     {
+//       tmprel = tmprel.concat("|:",relationshipType.type);
+//     }
+//   });
+
+//   if (tmprel) 
+//   {
+//     multiRel = "[".concat(tmprel, "*1..]");
+//     rel = "[".concat(tmprel,"]");
+//   }
+//   else
+//   {
+//     multiRel = "[".concat(tmprel,"*1..]");
+//   }
+
+//   query = query.concat("MATCH p=", firstNodeWithB, "-", multiRel, "->", startNodeWithB);
+//   query = query.concat(" WHERE NOT (", anyNode, "-", rel, "->", firstNodeWithB, ")");
+
+
+//   var conditions = [];
+//   var parameters = {};
+
+//   if (nodeProperties) 
+//   {
+
+//     forEachElement(nodeProperties, 
+//         function(value, key) {
+//           this.push(" AND " + startNode + "." + key + ' = {' + key + "}");
+//         }, 
+//         conditions);
+
+//     forEachElement(nodeProperties, 
+//         function(value, key) {
+//           parameters[key] = value;
+//         }, 
+//         parameters);
+
+//   }
+
+//   conditions.forEach(function(entry) {
+//       query = query.concat(entry);
+//   });
+
+//   query = query.concat(" RETURN p");
+
+//   query = query.concat(" UNION");
+
+//   query = query.concat(" MATCH p=", startNodeWithB, "-", multiRel, "->", endNodeWithB);
+//   query = query.concat(" WHERE NOT (", endNodeWithB, "-", rel, "->", anyNode, ")");
+
+
+//   conditions.forEach(function(entry) {
+//       query = query.concat(entry);
+//   });
+
+//   query = query.concat(" RETURN p;");
+
+//   console.log(query);
 
 // var params = {"oprcode": "0031"};
 // var query = "MATCH p= (opr:Operation)-[r:POST_OPR*1..]->(oprlast:Operation) " +

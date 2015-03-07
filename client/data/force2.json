@@ -1,106 +1,6569 @@
 {
   "nodes": [
     {
-      "id": "18",
-      "label": "Operation",
-      "name": "0032"
+      "id": "1"
     },
     {
-      "id": "20",
-      "label": "Operation",
-      "name": "0041"
+      "id": "3"
     },
     {
-      "id": "22",
-      "label": "Operation",
-      "name": "0051"
+      "id": "23"
     },
     {
-      "id": "15",
-      "label": "Operation",
-      "name": "0021"
+      "id": "8"
     },
     {
-      "id": "23",
-      "label": "Operation",
-      "name": "0052"
+      "id": "162"
     },
     {
-      "id": "17",
-      "label": "Operation",
-      "name": "0031"
+      "id": "161"
     },
     {
-      "id": "19",
-      "label": "Operation",
-      "name": "0040"
+      "id": "118"
     },
     {
-      "id": "21",
-      "label": "Operation",
-      "name": "0050"
+      "id": "93"
+    },
+    {
+      "id": "19"
+    },
+    {
+      "id": "20"
+    },
+    {
+      "id": "21"
+    },
+    {
+      "id": "22"
+    },
+    {
+      "id": "24"
+    },
+    {
+      "id": "25"
+    },
+    {
+      "id": "26"
+    },
+    {
+      "id": "27"
+    },
+    {
+      "id": "28"
+    },
+    {
+      "id": "29"
+    },
+    {
+      "id": "30"
+    },
+    {
+      "id": "31"
+    },
+    {
+      "id": "32"
+    },
+    {
+      "id": "33"
+    },
+    {
+      "id": "34"
+    },
+    {
+      "id": "35"
+    },
+    {
+      "id": "36"
+    },
+    {
+      "id": "37"
+    },
+    {
+      "id": "38"
+    },
+    {
+      "id": "39"
+    },
+    {
+      "id": "40"
+    },
+    {
+      "id": "41"
+    },
+    {
+      "id": "43"
+    },
+    {
+      "id": "46"
+    },
+    {
+      "id": "47"
+    },
+    {
+      "id": "48"
+    },
+    {
+      "id": "51"
+    },
+    {
+      "id": "54"
+    },
+    {
+      "id": "55"
+    },
+    {
+      "id": "56"
+    },
+    {
+      "id": "57"
+    },
+    {
+      "id": "58"
+    },
+    {
+      "id": "59"
+    },
+    {
+      "id": "60"
+    },
+    {
+      "id": "63"
+    },
+    {
+      "id": "65"
+    },
+    {
+      "id": "66"
+    },
+    {
+      "id": "67"
+    },
+    {
+      "id": "68"
+    },
+    {
+      "id": "69"
+    },
+    {
+      "id": "135"
+    },
+    {
+      "id": "136"
+    },
+    {
+      "id": "137"
+    },
+    {
+      "id": "138"
+    },
+    {
+      "id": "139"
+    },
+    {
+      "id": "141"
+    },
+    {
+      "id": "142"
+    },
+    {
+      "id": "143"
+    },
+    {
+      "id": "4"
+    },
+    {
+      "id": "144"
+    },
+    {
+      "id": "70"
+    },
+    {
+      "id": "145"
+    },
+    {
+      "id": "71"
+    },
+    {
+      "id": "146"
+    },
+    {
+      "id": "147"
+    },
+    {
+      "id": "62"
+    },
+    {
+      "id": "776"
+    },
+    {
+      "id": "938"
     }
   ],
   "links": [
     {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
       "source": 1,
       "target": 2,
-      "type": "POST_OPR"
+      "type": "COMES_FROM"
     },
     {
       "source": 3,
       "target": 0,
-      "type": "POST_OPR"
+      "type": "PLAYED"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
     },
     {
       "source": 0,
-      "target": 1,
-      "type": "POST_OPR"
-    },
-    {
-      "source": 1,
       "target": 4,
-      "type": "POST_OPR"
+      "type": "ENEMY_OF"
     },
     {
       "source": 3,
       "target": 0,
-      "type": "POST_OPR"
+      "type": "PLAYED"
     },
     {
       "source": 0,
-      "target": 1,
-      "type": "POST_OPR"
-    },
-    {
-      "source": 6,
-      "target": 7,
-      "type": "POST_OPR"
-    },
-    {
-      "source": 3,
       "target": 5,
-      "type": "POST_OPR"
+      "type": "ENEMY_OF"
     },
     {
       "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
       "target": 6,
-      "type": "POST_OPR"
+      "type": "ENEMY_OF"
     },
     {
       "source": 6,
       "target": 2,
-      "type": "POST_OPR"
+      "type": "COMES_FROM"
     },
     {
       "source": 3,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
       "target": 5,
-      "type": "POST_OPR"
+      "type": "ENEMY_OF"
     },
     {
       "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
       "target": 6,
-      "type": "POST_OPR"
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 10,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 12,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 12,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 12,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 12,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 13,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 13,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 13,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 13,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 14,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 14,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 14,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 14,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 15,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 15,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 15,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 15,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 16,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 16,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 16,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 16,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 17,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 17,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 17,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 17,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 17,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 18,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 18,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 18,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 18,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 19,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 19,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 19,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 20,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 20,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 20,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 20,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 21,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 21,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 21,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 21,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 22,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 22,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 22,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 22,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 23,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 23,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 24,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 24,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 24,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 24,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 24,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 25,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 25,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 25,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 25,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 25,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 26,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 26,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 26,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 26,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 26,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 27,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 27,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 27,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 27,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 27,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 28,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 28,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 28,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 28,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 29,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 30,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 31,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 32,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 32,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 32,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 32,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 32,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 33,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 34,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 35,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 35,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 35,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 35,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 35,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 36,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 36,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 36,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 36,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 36,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 37,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 37,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 37,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 37,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 38,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 38,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 38,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 38,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 38,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 39,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 39,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 39,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 39,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 39,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 40,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 40,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 40,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 40,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 41,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 41,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 41,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 41,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 41,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 42,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 42,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 42,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 42,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 43,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 43,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 43,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 43,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 44,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 44,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 44,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 44,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 45,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 45,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 45,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 45,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 45,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 46,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 46,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 46,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 47,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 47,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 47,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 47,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 47,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 48,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 48,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 48,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 49,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 49,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 49,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 49,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 49,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 50,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 50,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 50,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 50,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 50,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 51,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 51,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 51,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 51,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 51,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 52,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 52,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 53,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 53,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 53,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 54,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 54,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 54,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 54,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 55,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 55,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 11,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 55,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 55,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 55,
+      "target": 0,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 56,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 57,
+      "target": 56,
+      "type": "PLAYED"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 59,
+      "target": 58,
+      "type": "PLAYED"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 58,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 58,
+      "target": 60,
+      "type": "LOVES"
+    },
+    {
+      "source": 59,
+      "target": 58,
+      "type": "PLAYED"
+    },
+    {
+      "source": 60,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 58,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 59,
+      "target": 58,
+      "type": "PLAYED"
+    },
+    {
+      "source": 60,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 61,
+      "target": 60,
+      "type": "PLAYED"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 58,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 60,
+      "target": 58,
+      "type": "LOVES"
+    },
+    {
+      "source": 61,
+      "target": 60,
+      "type": "PLAYED"
+    },
+    {
+      "source": 61,
+      "target": 60,
+      "type": "PLAYED"
+    },
+    {
+      "source": 60,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "type": "PLAYED"
+    },
+    {
+      "source": 63,
+      "target": 11,
+      "type": "IS_A"
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "type": "PLAYED"
+    },
+    {
+      "source": 63,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "type": "PLAYED"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "type": "LOVES"
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "type": "ENEMY_OF"
+    },
+    {
+      "source": 65,
+      "target": 0,
+      "type": "COMPANION_OF"
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "type": "COMES_FROM"
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "type": "ALLY_OF"
     }
   ]
 }

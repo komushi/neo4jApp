@@ -85,16 +85,142 @@
 
               if (newVals) 
               {
-console.log("newVals");
-console.log(newVals);
-console.log("oldVals");
-console.log(oldVals);
                 return render(newVals);
               }
             }, true);              
           }
 
           d3.select(self.frameElement).style("height", height + "px");
+
+        }
+     };
+  })
+  .directive('stickyForceLayout', function($parse, $window){
+     return{
+        restrict:'EA',
+        scope: {
+          data: '=',
+          jsonPath: '@',
+          width: '@',
+          height: '@',
+          id: '@'
+        },
+        template:"<svg></svg>",
+        link: function(scope, elem, attrs){
+          var width = scope.width,
+              height = scope.height;
+
+
+          var d3 = $window.d3;
+
+
+          var rawSvg=elem.find('svg');
+          var svg = d3.select(rawSvg[0])
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(40,0)");
+
+          // var diagonal = d3.svg.diagonal()
+          //     .projection(function(d) { return [d.y, d.x]; });
+
+          // define render function
+          var render = function(json){
+            console.log("json");
+            console.log(json);
+
+            // remove all previous items before render
+            svg.selectAll("*").remove();
+
+            var force = d3.layout.force()
+                .nodes(json.nodes)
+                .links(json.links)                
+                .size([width, height])
+                .charge(-200)
+                .linkDistance(width/10)
+                .start();
+
+            var drag = force.drag()
+                .on("dragstart", dragstart);
+
+            // render relationships as lines
+            var link = svg.selectAll("line.link")
+                    .data(json.links).enter()
+                    .append("line").attr("class", "link");
+
+            // render nodes as circles, css-class from label
+            // var node = svg.selectAll("g.node")
+            //         .data(json.nodes).enter().append("g")
+            //         .append("circle")
+            //         .attr("class", "stickynode")
+            //         .attr("r", 12)
+            //         .on("dblclick", dblclick)
+            //         .call(drag);
+
+            var node = svg.selectAll("g.node")
+                    .data(json.nodes).enter().append("g")
+                    .attr("class", "stickynode")
+                    .on("dblclick", dblclick)
+                    .call(drag);
+
+            node.append("text")
+                  .attr("class", "stickynodetext")
+                  .attr("dx", 18)
+                  .attr("dy", ".35em")
+                  .text(function(d) { return d.name });
+                    
+            node.append("circle")
+                    .attr("r", 10);
+
+            // force feed algo ticks for coordinate computation
+            force.on("tick", function() {
+                link.attr("x1", function(d) { return d.source.x; })
+                        .attr("y1", function(d) { return d.source.y; })
+                        .attr("x2", function(d) { return d.target.x; })
+                        .attr("y2", function(d) { return d.target.y; });
+
+
+                node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+                // node.attr("cx", function(d) { return d.x; })
+                //     .attr("cy", function(d) { return d.y; });
+            });
+          };
+
+          var dblclick = function(d) {
+            d3.select(this).classed("fixed", d.fixed = false);
+          };
+
+
+          var dragstart = function(d) {
+            d3.select(this).classed("fixed", d.fixed = true);
+          };
+
+          if (scope.jsonPath) 
+          {
+            // load graph (nodes,links) json from /graph endpoint
+            d3.json(scope.jsonPath, function(error, json) {
+                if (error) 
+                  {
+                    console.error(error);
+                    return;
+                  }
+
+                  render(json);
+            });
+          }
+          else
+          {
+            // watch for data changes and re-render
+            scope.$watch('data', function(newVals, oldVals) {
+
+              if (newVals) 
+              {
+                return render(newVals);
+              }
+            }, true);              
+          }
+
+
 
         }
      };
@@ -276,9 +402,100 @@ console.log(oldVals);
             }, true);              
           }
             
-            d3.select(self.frameElement).style("height", "800px");
+          d3.select(self.frameElement).style("height", height + "px");
 
-         }
+        }
+     };
+  })
+  .directive('radialCluster', function($parse, $window){
+     return{
+        restrict:'EA',
+        scope: {
+          data: '=',
+          jsonPath: '@',
+          radius: '@',
+          id: '@'
+        },
+        template:"<svg></svg>",
+        link: function(scope, elem, attrs){
+          var radius = scope.radius;
+
+          var d3 = $window.d3;
+
+          var cluster = d3.layout.cluster()
+              .size([360, radius - 120]);
+
+
+          var rawSvg=elem.find('svg');
+          var svg = d3.select(rawSvg[0])
+            .attr("width", radius * 2)
+            .attr("height", radius * 2)
+            .append("g")
+            .attr("transform", "translate(" + radius + "," + radius + ")");
+
+          var diagonal = d3.svg.diagonal.radial()
+              .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+          // define render function
+          var render = function(json){
+            // remove all previous items before render
+            svg.selectAll("*").remove();
+
+            var nodes = cluster.nodes(json),
+                links = cluster.links(nodes);
+
+            var link = svg.selectAll("path.link")
+                .data(links)
+              .enter().append("path")
+                .attr("class", "link")
+                .attr("d", diagonal);
+
+            var node = svg.selectAll("g.node")
+                .data(nodes)
+              .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; });
+
+
+            node.append("circle")
+                .attr("r", 4.5);
+
+            node.append("text")
+                .attr("dy", ".31em")
+                .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+                .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+                .text(function(d) { return d.name; });
+
+          }
+
+          if (scope.jsonPath) 
+          {
+            // load graph (nodes,links) json from /graph endpoint
+            d3.json(scope.jsonPath, function(error, json) {
+                if (error) 
+                  {
+                    console.error(error);
+                    return;
+                  }
+
+                  render(json);
+            });
+          }
+          else
+          {
+            // watch for data changes and re-render
+            scope.$watch('data', function(newVals, oldVals) {
+
+              if (newVals) 
+              {
+                return render(newVals);
+              }
+            }, true);              
+          }
+
+          d3.select(self.frameElement).style("height", radius * 2 + "px");
+
+        }
      };
   })
   .directive('forceLayout', function($parse, $window){
@@ -318,7 +535,7 @@ console.log(oldVals);
                 .nodes(json.nodes)
                 .links(json.links)
                 .gravity(.05)
-                .distance(100)
+                .linkDistance(width/10)
                 .charge(-100)
                 .size([width, height])
                 .start();
@@ -337,10 +554,9 @@ console.log(oldVals);
 
             node.append("text")
                   .attr("class", "nodetext")
-                  .attr("class", "node")
                   .attr("dx", 12)
                   .attr("dy", ".35em")
-                  .text(function(d) { return d.name });
+                  .text(function(d) { return d["code"] });
                     
             node.append("circle")
                     .attr("r", 4.5);
@@ -378,6 +594,8 @@ console.log(oldVals);
               }
             }, true);              
           }
+
+          d3.select(self.frameElement).style("height", height + "px");
         }
      };
   });

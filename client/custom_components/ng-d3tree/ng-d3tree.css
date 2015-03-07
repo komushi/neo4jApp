@@ -19,3 +19,28 @@
 .node:not(:hover) .nodetext {
   display: none;
 }
+
+.stickynode {
+  font: 18px sans-serif;
+  cursor: move;
+}
+
+.stickynode circle {
+  cursor: move;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.stickynode:not(:hover) .stickynodetext {
+  /*display: none;*/
+  font: 12px sans-serif;
+}
+
+.stickynode.fixed circle{
+  fill: #ccc;
+}
+
+.stickynode.fixed .stickynodetext{
+  font: 18px sans-serif;
+}

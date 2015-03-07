@@ -8,11 +8,14 @@ app.controller('treeController', ['$scope','$interval', 'd3JSONServices', functi
       var jsonParam = {};
       var nodeProperties = {};
 
-      jsonParam.cypherQueryName = "startFrom";
-      jsonParam.nodeLabel = "Operation";
-      jsonParam.relationshipType = "POST_OPR";
-      nodeProperties.code = "0011";
-      nodeProperties.level = 1;
+
+      jsonParam.cypherQueryName = "endWith";
+      // jsonParam.nodeLabel = "Operation";
+      // jsonParam.level = "2";
+      // jsonParam.relationshipTypes = [{"type":"COMES_FROM"},{"type":"IS_A"},{"type":"LOVES"},{"type":"ENEMY_OF"}];
+      nodeProperties.code = "0010";
+      // nodeProperties.planet = "Earth";
+      // nodeProperties.level = 5;
       jsonParam.nodeProperties = nodeProperties;
       
 

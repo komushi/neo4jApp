@@ -11,7 +11,7 @@ exports.executeCypher = function(queryOptions) {
 
     var d = Q.defer();
 
-    var cypherQuery = cypherBuilder[queryOptions.cypherQueryName](queryOptions.nodeLabel, queryOptions.nodeProperties, queryOptions.relationshipType);
+    var cypherQuery = cypherBuilder[queryOptions.cypherQueryName](queryOptions);
 
     console.log("cypherQuery:");
     console.log(cypherQuery);

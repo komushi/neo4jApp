@@ -19,5 +19,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		when("/collapse", {templateUrl: "views/collapse.html", controller: "treeController"}).
 		when("/tree", {templateUrl: "views/tree.html", controller: "treeController"}).
 		when("/force", {templateUrl: "views/force.html", controller: "forceController"}).
+		when("/stickyforce", {templateUrl: "views/stickyforce.html", controller: "forceController"}).
+		when("/radialcluster", {templateUrl: "views/radialcluster.html", controller: "treeController"}).
 		when("/sales", {templateUrl: "views/sales.html", controller: "salesController"});
 }]);
