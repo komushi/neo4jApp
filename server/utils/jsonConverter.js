@@ -13,7 +13,6 @@ var forEachElement = function(obj, iterator, context) {
 };
 
 var idIndex = function(nodes,id) {
-  console.log(nodes);
   for (var i=0;i<nodes.length;i++) {
     if (nodes[i].id == id) return i;}
   return null;
@@ -30,15 +29,21 @@ var getNode = function(node)
       }, 
       conditions);
 
-  var text = '{"id":"' + node.id + '","label":"' + node.labels[0] + '"';
+  var text = '{"id":"'+ node.id + '"';
+  // var text = '{"id":"' + node.id + '","label":"' + node.labels[0] + '"';
+
+  if (node.labels.length > 0) 
+  {
+    text = text.concat('","label":"', node.labels[0], '"');
+  }
 
   conditions.forEach(function(entry) {
       text = text.concat(entry);
   });
 
-  text += '}';
+  text = text.concat('}');
 
-  // console.log(text);  
+  console.log(text);  
   return JSON.parse(text);
 };
 

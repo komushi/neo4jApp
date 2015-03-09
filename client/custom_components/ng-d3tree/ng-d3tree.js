@@ -100,7 +100,9 @@
         restrict:'EA',
         scope: {
           data: '=',
+          labelMap: '=',
           jsonPath: '@',
+          labelKey: '@',
           width: '@',
           height: '@',
           id: '@'
@@ -109,6 +111,9 @@
         link: function(scope, elem, attrs){
           var width = scope.width,
               height = scope.height;
+
+          var labelMap = scope.labelMap,
+              labelKey = scope.labelKey;
 
 
           var d3 = $window.d3;
@@ -126,8 +131,7 @@
 
           // define render function
           var render = function(json){
-            console.log("json");
-            console.log(json);
+
 
             // remove all previous items before render
             svg.selectAll("*").remove();
@@ -167,7 +171,20 @@
                   .attr("class", "stickynodetext")
                   .attr("dx", 18)
                   .attr("dy", ".35em")
-                  .text(function(d) { return d.name });
+                  .text(function(d) 
+                  {
+                    if (d.label) 
+                    {
+                      var nodeName = labelMap[d.label];  
+                      return d[nodeName];
+                    }
+                    else
+                    {
+                      return d[labelKey];
+                    }
+                    
+                    
+                  });
                     
             node.append("circle")
                     .attr("r", 10);
@@ -556,7 +573,7 @@
                   .attr("class", "nodetext")
                   .attr("dx", 12)
                   .attr("dy", ".35em")
-                  .text(function(d) { return d["code"] });
+                  .text(function(d) { return nodeName + d[nodeName] });
                     
             node.append("circle")
                     .attr("r", 4.5);
