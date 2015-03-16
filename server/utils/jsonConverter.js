@@ -34,7 +34,7 @@ var getNode = function(node)
 
   if (node.labels.length > 0) 
   {
-    text = text.concat('","label":"', node.labels[0], '"');
+    text = text.concat(',"label":"', node.labels[0], '"');
   }
 
   conditions.forEach(function(entry) {

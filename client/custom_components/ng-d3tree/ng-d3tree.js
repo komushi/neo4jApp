@@ -1,12 +1,87 @@
 ( function () {
   'use strict';
 
+  var hasPropertiesOtherThan = function(obj, propertyNames) {
+
+    var propertyName, key;
+
+    if (!propertyNames)
+    {
+      propertyNames = [];
+    }
+
+    if (obj) {
+
+      for (key in obj) {
+        if (propertyNames.indexOf(key) == -1)
+        {
+          propertyName = key;
+          break;
+        }
+      }
+      
+    }
+
+    return propertyName;
+  };
+
+  var getNodeText = function(d, labelMap) {
+
+    var text;
+
+    if (d.label) 
+    {
+      var nodeKey;
+
+      if (labelMap)
+      {
+        if (labelMap.hasOwnProperty(d.label))
+        {
+          nodeKey = labelMap[d.label];
+        }        
+      }
+
+      if (d.hasOwnProperty(nodeKey))
+      {
+        text = d.label.concat(":", d[nodeKey]);
+      }
+      else if (hasPropertiesOtherThan(d, ["id", "label"]))
+      {
+        nodeKey = hasPropertiesOtherThan(d, ["id", "label"]);
+        text = d.label.concat(":", d[nodeKey]);
+      }
+      else 
+      {
+        nodeKey = hasPropertiesOtherThan(d);
+        text = d.label.concat(":", d[nodeKey]);
+      }
+    }
+    else
+    {
+      if (hasPropertiesOtherThan(d, "id"))
+      {
+        nodeKey = hasPropertiesOtherThan(d, ["id"]);
+        text = d[nodeKey];
+      }
+      else 
+      {
+        nodeKey = hasPropertiesOtherThan(d);
+        text = d[nodeKey];
+      }
+    }
+    
+    return text;
+
+
+  };
+
   angular.module('ngD3tree',[])
   .directive('reingoldTilfordTree', function($parse, $window){
      return{
         restrict:'EA',
         scope: {
           data: '=',
+          labelMap: '=',
           jsonPath: '@',
           width: '@',
           height: '@',
@@ -17,6 +92,7 @@
           var width = scope.width,
               height = scope.height;
 
+          var labelMap = scope.labelMap;
 
           var d3 = $window.d3;
 
@@ -50,7 +126,7 @@
 
             var node = svg.selectAll("g.node")
                 .data(nodes)
-              .enter().append("g")
+                .enter().append("g")
                 .attr("class", "node")
                 .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
 
@@ -61,7 +137,10 @@
                 .attr("dx", function(d) { return d.children ? -8 : 8; })
                 .attr("dy", 3)
                 .attr("text-anchor", function(d) { return d.children ? "end" : "start"; })
-                .text(function(d) { return d.name; });
+                .text(function(d) 
+                {
+                  return getNodeText(d, labelMap);
+                });
 
           }
 
@@ -102,7 +181,6 @@
           data: '=',
           labelMap: '=',
           jsonPath: '@',
-          labelKey: '@',
           width: '@',
           height: '@',
           id: '@'
@@ -112,12 +190,9 @@
           var width = scope.width,
               height = scope.height;
 
-          var labelMap = scope.labelMap,
-              labelKey = scope.labelKey;
-
+          var labelMap = scope.labelMap;
 
           var d3 = $window.d3;
-
 
           var rawSvg=elem.find('svg');
           var svg = d3.select(rawSvg[0])
@@ -126,12 +201,8 @@
             .append("g")
             .attr("transform", "translate(40,0)");
 
-          // var diagonal = d3.svg.diagonal()
-          //     .projection(function(d) { return [d.y, d.x]; });
-
           // define render function
           var render = function(json){
-
 
             // remove all previous items before render
             svg.selectAll("*").remove();
@@ -152,15 +223,6 @@
                     .data(json.links).enter()
                     .append("line").attr("class", "link");
 
-            // render nodes as circles, css-class from label
-            // var node = svg.selectAll("g.node")
-            //         .data(json.nodes).enter().append("g")
-            //         .append("circle")
-            //         .attr("class", "stickynode")
-            //         .attr("r", 12)
-            //         .on("dblclick", dblclick)
-            //         .call(drag);
-
             var node = svg.selectAll("g.node")
                     .data(json.nodes).enter().append("g")
                     .attr("class", "stickynode")
@@ -168,23 +230,13 @@
                     .call(drag);
 
             node.append("text")
-                  .attr("class", "stickynodetext")
-                  .attr("dx", 18)
-                  .attr("dy", ".35em")
-                  .text(function(d) 
-                  {
-                    if (d.label) 
-                    {
-                      var nodeName = labelMap[d.label];  
-                      return d[nodeName];
-                    }
-                    else
-                    {
-                      return d[labelKey];
-                    }
-                    
-                    
-                  });
+              .attr("class", "stickynodetext")
+              .attr("dx", 18)
+              .attr("dy", ".35em")
+              .text(function(d) 
+              {
+                return getNodeText(d, labelMap);
+              });
                     
             node.append("circle")
                     .attr("r", 10);
@@ -198,15 +250,12 @@
 
 
                 node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-                // node.attr("cx", function(d) { return d.x; })
-                //     .attr("cy", function(d) { return d.y; });
             });
           };
 
           var dblclick = function(d) {
             d3.select(this).classed("fixed", d.fixed = false);
           };
-
 
           var dragstart = function(d) {
             d3.select(this).classed("fixed", d.fixed = true);
@@ -237,8 +286,6 @@
             }, true);              
           }
 
-
-
         }
      };
   })
@@ -247,6 +294,7 @@
         restrict:'EA',
         scope: {
           data: '=',
+          labelMap: '=',
           jsonPath: '@',
           width: '@',
           height: '@',
@@ -258,6 +306,8 @@
             var margin = {top: 20, right: 120, bottom: 20, left: 120},
                 width = 960 - margin.right - margin.left,
                 height = 800 - margin.top - margin.bottom;
+
+            var labelMap = scope.labelMap;
 
             var d3 = $window.d3;
                 
@@ -305,7 +355,7 @@
                   .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
                   .attr("dy", ".35em")
                   .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-                  .text(function(d) { return d.name; })
+                  .text(function(d) { return getNodeText(d, labelMap); })
                   .style("fill-opacity", 1e-6);
 
               // Transition nodes to their new position.
@@ -429,6 +479,7 @@
         restrict:'EA',
         scope: {
           data: '=',
+          labelMap: '=',
           jsonPath: '@',
           radius: '@',
           id: '@'
@@ -436,6 +487,8 @@
         template:"<svg></svg>",
         link: function(scope, elem, attrs){
           var radius = scope.radius;
+
+          var labelMap = scope.labelMap;
 
           var d3 = $window.d3;
 
@@ -481,7 +534,7 @@
                 .attr("dy", ".31em")
                 .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
                 .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
-                .text(function(d) { return d.name; });
+                .text(function(d) { return getNodeText(d, labelMap); });
 
           }
 
@@ -520,6 +573,7 @@
         restrict:'EA',
         scope: {
           data: '=',
+          labelMap: '=',
           jsonPath: '@',
           width: '@',
           height: '@',
@@ -530,6 +584,7 @@
           var width = scope.width,
               height = scope.height;
 
+          var labelMap = scope.labelMap;
 
           var d3 = $window.d3;
 
@@ -573,7 +628,7 @@
                   .attr("class", "nodetext")
                   .attr("dx", 12)
                   .attr("dy", ".35em")
-                  .text(function(d) { return nodeName + d[nodeName] });
+                  .text(function(d) { return getNodeText(d, labelMap); });
                     
             node.append("circle")
                     .attr("r", 4.5);

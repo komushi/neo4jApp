@@ -12,9 +12,9 @@ app.controller('forceController', ['$scope','$interval', 'd3JSONServices', funct
       jsonParam.cypherQueryName = "contains";
       // jsonParam.nodeLabel = "Operation";
 
-      jsonParam.level = "2";
+      jsonParam.level = "3";
       // jsonParam.relationshipTypes = [{"type":"POST_OPR"}];
-      jsonParam.relationshipTypes = [{"type":"COMES_FROM"},{"type":"IS_A"}];
+      // jsonParam.relationshipTypes = [{"type":"COMES_FROM"},{"type":"IS_A"}];
       // jsonParam.relationshipTypes = [{"type":"COMES_FROM"},{"type":"IS_A"},{"type":"LOVES"},{"type":"ENEMY_OF"}];
       // nodeProperties.code = "0010";
       // nodeProperties.species = "Silurian";
