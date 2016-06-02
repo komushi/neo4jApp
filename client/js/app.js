@@ -15,11 +15,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 
 	$routeProvider.
-		when("/", {redirectTo: '/tree'}).
-		when("/collapse", {templateUrl: "views/collapse.html", controller: "treeController"}).
-		when("/tree", {templateUrl: "views/tree.html", controller: "treeController"}).
+		when("/", {redirectTo: '/sales'}).
+		when("/sales", {templateUrl: "views/sales.html", controller: "salesController"}).
 		when("/force", {templateUrl: "views/force.html", controller: "forceController"}).
+		when("/forcestatic", {templateUrl: "views/forcestatic.html"}).
 		when("/stickyforce", {templateUrl: "views/stickyforce.html", controller: "forceController"}).
+		when("/stickyforcestatic", {templateUrl: "views/stickyforcestatic.html"}).
+		when("/tree", {templateUrl: "views/tree.html", controller: "treeController"}).
+		when("/treestatic", {templateUrl: "views/treestatic.html"}).
+		when("/collapse", {templateUrl: "views/collapse.html", controller: "treeController"}).
+		when("/collapsestatic", {templateUrl: "views/collapsestatic.html"}).
 		when("/radialcluster", {templateUrl: "views/radialcluster.html", controller: "treeController"}).
-		when("/sales", {templateUrl: "views/sales.html", controller: "salesController"});
+		when("/radialclusterstatic", {templateUrl: "views/radialclusterstatic.html"});
 }]);
