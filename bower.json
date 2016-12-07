@@ -6,9 +6,9 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "angular": "1.2.x",
-    "angular-route": "1.2.x",
-    "bootstrap": "~3.2.0",
-    "d3": "~3.4.1"
+    "angular": "1.5.x",
+    "angular-route": "1.5.x",
+    "bootstrap": "3.3.x",
+    "d3": "^3.5.17"
   }
 }
